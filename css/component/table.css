@@ -1,0 +1,32 @@
+table.m-table {
+  border: none;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table.m-table thead th {
+  height: 52px;
+}
+table.m-table tbody tr {
+  height: 48px;
+}
+
+table.m-table tr td,
+th {
+  padding: 0 16px;
+}
+
+td,
+th {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+table.m-table tbody tr:nth-child(2n-1) {
+  background-color: #e9ebee;
+}
+
+table.m-table tbody tr:hover {
+  background-color: #fff3eb;
+}

@@ -1,0 +1,33 @@
+@import url(/css/common/common.css);
+@import url(/css/component/button.css);
+@import url(/css/component/input.css);
+@import url(/css/component/combobox.css);
+@import url(/css/component/table.css);
+@import url(/css/component/paging-navigation.css);
+@import url(/css/component/chip-status.css);
+@import url(/css/component/toast-messenger.css);
+@import url(/css/component/pop-up.css);
+
+body {
+  font-family: GoogleSans;
+}
+
+@font-face {
+  font-family: GoogleSans;
+  src: url(../content/font/GoogleSans-Regular.otf);
+}
+
+@font-face {
+  font-family: GoogleSans-Bold;
+  src: url(../content/font/GoogleSans-Bold.otf);
+}
+
+@font-face {
+  font-family: GoogleSans-Medium;
+  src: url(../content/font/GoogleSans-Medium.otf);
+}
+
+@font-face {
+  font-family: GoogleSans-Regular;
+  src: url(../content/font/GoogleSans-Regular.otf);
+}

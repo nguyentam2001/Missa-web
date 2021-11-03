@@ -1,0 +1,34 @@
+:root {
+  --primary-color: #01b075;
+  --hover-color: #2fbe8e;
+  --default-color: #019160;
+  --focus-color: #ebf9f4;
+}
+.m-row {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.m-row > label {
+  display: block;
+  font-weight: 700;
+}
+
+.text-algin-center {
+  text-align: center;
+}
+.text-algin-left {
+  text-align: left;
+}
+
+.text-algin-right {
+  text-align: right;
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+.active {
+  background-color: #01b075;
+  color: white;
+}

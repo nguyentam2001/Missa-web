@@ -1,0 +1,87 @@
+.m-pop-up {
+  position: relative;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.m-pop-up-del {
+  position: absolute;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  border-bottom-left-radius: 4px;
+  background-position: 50% 50%;
+
+  background-image: url(/content/icon/x.svg);
+  background-repeat: no-repeat;
+}
+.m-pop-up-del:hover {
+  background-color: #e9ebee;
+}
+
+.m-pop-up-header p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+.m-pop-up-content {
+  display: flex;
+  align-items: center;
+}
+
+.m-pop-up-content .m-pop-up-icon {
+  width: 36px;
+  height: 36px;
+  background-image: url(/content/icon/radio-checked.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-left: 24px;
+}
+
+.m-pop-up-content p {
+  margin-right: 24px;
+  font-size: 11px;
+}
+.m-pop-up-content p span {
+  font-weight: 700;
+}
+.m-pop-up-footer {
+  margin-top: 24px;
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ebf4ff;
+}
+
+.m-btn-pop-up {
+  min-width: 100px;
+  border-radius: 4px;
+  height: 40px;
+  color: #000000;
+  text-align: center;
+  line-height: 40px;
+  padding: 0 16px;
+}
+.m-btn-pop-up:hover {
+  background-color: #e9ebee;
+}
+
+.m-btn-pop-up-pr {
+  min-width: 100px;
+  border-radius: 4px;
+  height: 40px;
+  background-color: var(--primary-color);
+  text-align: center;
+  color: white;
+  line-height: 40px;
+  margin-right: 24px;
+  margin-left: 16px;
+}
+.m-btn-pop-up-pr:hover {
+  background-color: #2fbe8e;
+}

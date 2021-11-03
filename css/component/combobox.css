@@ -1,0 +1,16 @@
+.m-combobox {
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  height: 40px;
+  outline: none;
+  color: #bbbbbb;
+}
+
+.m-combobox::placeholder {
+  font-size: 11px;
+}
+
+.m-combobox.m-combobox-page {
+  color: #000000;
+  width: 100%;
+}

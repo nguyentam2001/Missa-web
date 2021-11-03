@@ -1,0 +1,29 @@
+.toast-messenger {
+  height: 48px;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgb(0, 0, 0, 0.16);
+  display: flex;
+  max-width: 300px;
+  align-items: center;
+  padding: 8px;
+}
+.toast-messenger-icon {
+  background-image: url(/content/icon/document-online.png);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+.toast-messenger .toast-messenger-content {
+  color: #000000;
+  font-size: 13px;
+  flex: 1;
+  padding-left: 32px;
+}
+.toast-messenger-del {
+  background-image: url(/content/icon/x.svg);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}

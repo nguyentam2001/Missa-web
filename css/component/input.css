@@ -1,0 +1,33 @@
+input.m-input {
+  border: 1px solid #dbdeff;
+  border-radius: 4px;
+  height: 40px;
+  font-size: 13px;
+  color: #bbbbbb;
+  outline: none;
+  padding-left: 16px;
+}
+.m-input::placeholder {
+  font-size: 11px;
+}
+.m-input:focus {
+  border-color: #019160;
+  color: #000000;
+}
+
+.m-input.m-input-error {
+  border-color: #ff4747;
+}
+
+input.m-input-search {
+  background-image: url(../../content/icon/search.png);
+  background-repeat: no-repeat;
+  border: 1px solid #dbdeff;
+  background-position: 16px 50%;
+  background-size: 16px;
+  padding-left: 40px;
+}
+
+input.m-input-search::placeholder {
+  font-size: 12px;
+}

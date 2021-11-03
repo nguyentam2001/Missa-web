@@ -1,0 +1,73 @@
+.m-table-paging {
+  width: 100%;
+
+  height: 56px;
+  display: flex;
+}
+
+.m-table-paging-left {
+  width: 200px;
+  height: 100%;
+}
+.m-table-paging-center {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-table-paging-right {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.m-paging-list {
+  display: flex;
+}
+.m-paging-item.m-paging-item-left-double,
+.m-paging-item.m-paging-item-left-one,
+.m-paging-item.m-paging-item-right-double,
+.m-paging-item.m-paging-item-right-one {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 36px;
+  border-radius: 4px;
+  height: 36px;
+  border: none;
+}
+.m-paging-item.m-paging-item-left-double {
+  background-image: url(../../content/icon/btn-firstpage.svg);
+}
+.m-paging-item.m-paging-item-left-one {
+  background-image: url(../../content/icon/btn-prev-page.svg);
+}
+
+.m-paging-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  border-radius: 50%;
+  margin: 0 8px;
+  height: 36px;
+  list-style: none;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.m-paging-item.active:hover {
+  background-color: #01b075;
+}
+.m-paging-item:hover {
+  background-color: #ffff;
+}
+.m-paging-item.m-paging-item-right-one {
+  background-image: url(../../content/icon/btn-next-page.svg);
+}
+
+.m-paging-item.m-paging-item-right-double {
+  background-image: url(../../content/icon/btn-lastpage.svg);
+}

@@ -1,0 +1,22 @@
+.m-chip {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+.m-chip-status {
+  font-size: 11px;
+  min-width: 100px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #ffebeb;
+  color: #ff6900;
+}
+
+.m-chip-status:nth-child(2) {
+  background-color: #ebf4ff;
+  color: #bbbbbb;
+}
