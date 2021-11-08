@@ -20,29 +20,34 @@
 .m-pop-up-del:hover {
   background-color: #e9ebee;
 }
-
+.m-pop-up-header {
+  margin-left: 24px;
+}
 .m-pop-up-header p {
   font-size: 15px;
   font-weight: 700;
   margin-top: 24px;
-  margin-left: 24px;
 }
 .m-pop-up-content {
+  margin-top: 24px;
   display: flex;
   align-items: center;
+  margin-left: 24px;
 }
 
-.m-pop-up-content .m-pop-up-icon {
+.m-pop-up-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
-  background-image: url(/content/icon/radio-checked.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: rgb(238, 234, 234);
   margin-right: 10px;
-  margin-left: 24px;
 }
 
 .m-pop-up-content p {
+  flex: 1;
   margin-right: 24px;
   font-size: 11px;
 }
@@ -85,3 +90,10 @@
 .m-btn-pop-up-pr:hover {
   background-color: #2fbe8e;
 }
+
+/* red */
+.m-pop-up-red .m-btn-pop-up-pr {
+  background-color: #f65454;
+}
+
+/* toast */

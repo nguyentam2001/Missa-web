@@ -7,9 +7,21 @@
 @import url(/css/component/chip-status.css);
 @import url(/css/component/toast-messenger.css);
 @import url(/css/component/pop-up.css);
+@import url(/css/component/icons.css);
+@import url(/css/layout/navbar.css);
+@import url(/css/layout/header.css);
+@import url(/css/layout/content.css);
+@import url(/css/layout/footer.css);
 
 body {
   font-family: GoogleSans;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @font-face {

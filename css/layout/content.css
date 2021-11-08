@@ -1,0 +1,37 @@
+.content {
+  height: calc(100% - 48px);
+  padding: 16px;
+}
+
+.content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.content-title-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.content-search {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: space-between;
+}
+
+.content-search .m-combobox {
+  margin: 0 8px;
+}
+
+.content-search .reload {
+  width: 52px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #dbdeff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  background-image: url(../../content/icon/refresh.png);
+}

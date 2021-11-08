@@ -4,6 +4,11 @@
   --default-color: #019160;
   --focus-color: #ebf9f4;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .m-row {
   display: block;
   width: 100%;
@@ -31,4 +36,12 @@
 .active {
   background-color: #01b075;
   color: white;
+}
+
+.wrapper-flex {
+  display: flex;
+}
+
+.wrapper {
+  width: 100%;
 }

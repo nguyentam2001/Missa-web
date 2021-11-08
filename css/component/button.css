@@ -1,4 +1,6 @@
 .m-btn {
+  display: flex;
+  align-items: center;
   background-color: #019160;
   border-radius: 4px;
   height: 40px;

@@ -7,6 +7,11 @@ table.m-table {
 table.m-table thead th {
   height: 52px;
 }
+
+table .tbody-wrapper {
+  height: 60vh;
+  overflow: hidden;
+}
 table.m-table tbody tr {
   height: 48px;
 }

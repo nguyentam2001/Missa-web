@@ -8,6 +8,8 @@
 .m-table-paging-left {
   width: 200px;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .m-table-paging-center {
   flex: 1;
