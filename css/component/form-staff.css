@@ -1,0 +1,27 @@
+.form {
+}
+.form-staff {
+  max-width: 800px;
+  position: relative;
+  border: 1px solid #000;
+}
+.form-staff-del {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  padding: 16px;
+  background-image: url(../../content/icon/x.svg);
+}
+.form-staff-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-staff-content {
+}
+
+.img {
+}
+.title {
+}

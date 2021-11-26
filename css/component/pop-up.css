@@ -1,11 +1,35 @@
+.m-dialog {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%; /* Full width */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+
+.m-dialog .m-dialog-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .m-pop-up {
   position: relative;
   border: 1px solid #ccc;
-  max-width: 400px;
+  width: 400px;
   border-radius: 4px;
   overflow: hidden;
 }
-.m-pop-up-del {
+
+.m-pup-with-auto {
+  width: auto !important;
+}
+.m-pop-up-del-icon {
   position: absolute;
   right: 0;
   width: 24px;
@@ -13,11 +37,10 @@
   padding: 8px;
   border-bottom-left-radius: 4px;
   background-position: 50% 50%;
-
   background-image: url(/content/icon/x.svg);
   background-repeat: no-repeat;
 }
-.m-pop-up-del:hover {
+.m-pop-up-del-icon:hover {
   background-color: #e9ebee;
 }
 .m-pop-up-header {
@@ -91,9 +114,67 @@
   background-color: #2fbe8e;
 }
 
-/* red */
-.m-pop-up-red .m-btn-pop-up-pr {
+/* del */
+.m-pop-up-del {
+  background-color: #ffffff;
+}
+.m-pop-up-del .m-btn-pop-up-pr {
+  cursor: pointer;
   background-color: #f65454;
 }
 
+.m-pop-up-del .m-btn-pop-up-pr:hover {
+  background-color: #2fbe8e;
+}
 /* toast */
+
+/* staff */
+
+.m-pop-up.m-pop-up-staff {
+  background-color: #ffff;
+}
+.m-pop-up-staff .m-pop-up-content {
+  align-items: flex-start;
+}
+.m-pop-up-content-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.m-pop-up-content-avatar .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../../content/icon/avatar-default.png);
+  border: 1px solid #ccc;
+}
+
+.m-pop-up-content-input-header .title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.m-pop-up-content-input {
+  flex: 1;
+}
+.m-pop-up-content-input .underline {
+  content: "";
+  margin-top: 8px;
+  width: 80px;
+  border-bottom: 4px solid var(--primary-color);
+}
+.m-combobox-sex {
+  width: 100%;
+}
+
+.m-pop-up-content-input .input-wrapper {
+  margin-top: 8px;
+  width: 50%;
+  padding-right: 24px;
+}
+
+.m-input.m-input-staff {
+  width: 100%;
+}
+
+/* m-dialog-del show form delete */

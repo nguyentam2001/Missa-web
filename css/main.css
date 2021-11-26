@@ -12,6 +12,7 @@
 @import url(/css/layout/header.css);
 @import url(/css/layout/content.css);
 @import url(/css/layout/footer.css);
+@import url(/css/component/form-staff.css);
 
 body {
   font-family: GoogleSans;

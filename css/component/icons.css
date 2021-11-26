@@ -35,3 +35,7 @@
   display: block;
   background-image: url(../../content/icon/add.png);
 }
+
+.m-icon-save {
+  margin-right: 4px;
+}

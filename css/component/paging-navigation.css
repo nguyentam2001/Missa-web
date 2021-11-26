@@ -1,7 +1,9 @@
 .m-table-paging {
-  width: 100%;
-
+  position: absolute;
   height: 56px;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
   display: flex;
 }
 

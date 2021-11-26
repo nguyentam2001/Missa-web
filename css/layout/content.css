@@ -1,6 +1,9 @@
 .content {
-  height: calc(100% - 48px);
-  padding: 16px;
+  height: calc(100vh - 48px);
+  padding: 16px 16px 0 16px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
 
 .content-title {
@@ -21,17 +24,10 @@
   justify-content: space-between;
 }
 
-.content-search .m-combobox {
-  margin: 0 8px;
+.search-wrapper-right {
+  display: flex;
 }
 
-.content-search .reload {
-  width: 52px;
-  height: 36px;
-  border-radius: 4px;
-  border: 1px solid #dbdeff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-  background-image: url(../../content/icon/refresh.png);
+.content-search .m-combobox {
+  margin: 0 8px;
 }

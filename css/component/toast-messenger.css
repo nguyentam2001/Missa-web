@@ -1,29 +1,44 @@
+.toast-messenger-box {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+}
+
+.toast-messenger-del {
+  display: none;
+}
+.toast-messenger-success {
+  display: none;
+}
+
 .toast-messenger {
+  background-color: #ffffff;
+  margin-top: 16px;
   height: 48px;
   border-radius: 4px;
-  box-shadow: 0 3px 6px rgb(0, 0, 0, 0.16);
+  box-shadow: 2px 3px 8px rgb(0 0 0 / 50%);
   display: flex;
   max-width: 300px;
   align-items: center;
   padding: 8px;
 }
 .toast-messenger-icon {
-  background-image: url(/content/icon/document-online.png);
-  width: 24px;
-  height: 24px;
   background-repeat: no-repeat;
-  background-position: 0 50%;
+  font-size: 24px;
+  color: var(--primary-color);
 }
 .toast-messenger .toast-messenger-content {
   color: #000000;
   font-size: 13px;
   flex: 1;
-  padding-left: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-.toast-messenger-del {
+.toast-messenger-cancel {
   background-image: url(/content/icon/x.svg);
   width: 24px;
   height: 24px;
+  cursor: pointer;
   background-repeat: no-repeat;
   background-position: 0 50%;
 }

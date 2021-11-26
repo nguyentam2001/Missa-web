@@ -2,10 +2,16 @@ table.m-table {
   border: none;
   border-spacing: 0;
   width: 100%;
+  flex: 1;
+  overflow: scroll;
 }
 
 table.m-table thead th {
   height: 52px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
 }
 
 table .tbody-wrapper {
@@ -34,4 +40,25 @@ table.m-table tbody tr:nth-child(2n-1) {
 
 table.m-table tbody tr:hover {
   background-color: #fff3eb;
+}
+
+table.m-table tbody tr {
+  position: relative;
+}
+
+tr .handle-wrapper {
+  display: none;
+}
+
+tr .handle-wrapper.handle-wrapper-selected {
+  display: block;
+}
+
+tr .handle-wrapper-btn {
+  min-width: 100px;
+  display: flex;
+  right: 0;
+  top: 3px;
+  position: absolute;
+  justify-content: space-between;
 }

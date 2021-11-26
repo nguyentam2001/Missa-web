@@ -14,8 +14,7 @@
     <title>Phần mềm quản lý nhà hàng - CUKCUK.vn</title>
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body style="height: 2000px">
-    Hello world
+  <body>
     <br />
     <div class="m-row">
       <label class="m-label" for="m-btn">1: Button</label>
@@ -229,20 +228,35 @@
     </div>
     <div>
       <label class="m-label" for="m-combobox">9: Toast-messenger</label>
-      <div class="toast-messenger">
-        <div class="toast-messenger-icon"></div>
-        <div class="toast-messenger-content">
-          <p>Nội dung đi kèm tiêu đề</p>
+      <div class="toast-messenger-box">
+        <div class="toast-messenger-item toast-messenger-del">
+          <div class="toast-messenger">
+            <div class="toast-messenger-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-messenger-content">
+              <p>Xóa nhân viên thành công</p>
+            </div>
+            <div class="toast-messenger-cancel"></div>
+          </div>
         </div>
-
-        <div class="toast-messenger-del"></div>
+        <div class="toast-messenger-item">
+          <div class="toast-messenger">
+            <div class="toast-messenger-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-messenger-content">
+              <p>Xóa nhân viên thành công</p>
+            </div>
+            <div class="toast-messenger-cancel"></div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div>
       <label class="m-label" for="m-combobox">10: Pup-up</label>
       <div class="m-pop-up">
-        <div class="m-pop-up-del"></div>
         <div class="m-pop-up-header">
           <p>Đóng form thông tin chung</p>
         </div>
@@ -263,8 +277,8 @@
     </div>
     <div>
       <label class="m-label" for="m-combobox">11: Pup-up-delete</label>
-      <div class="m-pop-up m-pop-up-red">
-        <div class="m-pop-up-del"></div>
+      <div class="m-pop-up m-pop-up-del">
+        <div class="m-pop-up-del-icon"></div>
         <div class="m-pop-up-header">
           <p>Xóa bản ghi A</p>
         </div>
@@ -297,9 +311,214 @@
           </p>
         </div>
         <div class="m-pop-up-footer">
-          <div class="m-btn-pop-up-pr">Đóng</div>
+          <div class="m-btn-pop-up">Hủy</div>
+          <div class="m-btn-pop-up-pr">Luu</div>
         </div>
       </div>
     </div>
+    <!-- form start -->
+
+    <div>
+      <label class="m-label" for="m-combobox">11: Pup-up thêm mới</label>
+      <div class="m-dialog">
+        <div class="m-dialog-wrapper">
+          <div class="m-pop-up m-pop-up-staff">
+            <div class="m-pop-up-del"></div>
+            <div class="m-pop-up-header">
+              <p>THÔNG TIN NHÂN VIÊN</p>
+            </div>
+            <div class="m-pop-up-content">
+              <div class="m-pop-up-content-avatar">
+                <div class="img m-icon"></div>
+                <p class="title">
+                  (Vui lòng chọn ảnh có định dạng .jpg, .jpeg, .png, .gif. )
+                </p>
+              </div>
+              <div class="m-pop-up-content-input">
+                <div class="m-pop-up-content-input-header">
+                  <p class="title">A. Thông tin chung</p>
+                </div>
+                <div class="underline"></div>
+                <div class="t-row">
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Mã nhân viên (*)</p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="text"
+                      name="m-input"
+                      placeholder="Nhập mã nhân viên"
+                    />
+                  </div>
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Họ và Tên (*)</p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="text"
+                      name="m-input"
+                      id="m-input-staff"
+                      placeholder="Họ và tên"
+                    />
+                  </div>
+                </div>
+                <div class="t-row">
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Ngày sinh</p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="date"
+                      name="m-input"
+                      placeholder="Ngày sinh"
+                    />
+                  </div>
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Giới tính</p>
+                    <select class="m-combobox m-combobox-sex" name="" id="">
+                      <option class="m-combobox" value="Male">Nam</option>
+                      <option class="m-combobox" value="Female">Nữ</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="t-row">
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">
+                      Số CMND/Căn cước (*)
+                    </p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="text"
+                      name="m-input"
+                      placeholder="Số CMND/Căn cước"
+                    />
+                  </div>
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Ngày cấp</p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="date"
+                      name="m-input"
+                      id="m-input-staff"
+                      placeholder="Ngày cấp"
+                    />
+                  </div>
+                </div>
+                <div class="t-row">
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Nơi cấp</p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="text"
+                      name="m-input"
+                      placeholder="Nơi cấp"
+                    />
+                  </div>
+                </div>
+                <div class="t-row">
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Email (*)</p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="text"
+                      name="m-input"
+                      placeholder="Nhập Email"
+                    />
+                  </div>
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">
+                      Số điện thoại (*)
+                    </p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="text"
+                      name="m-input"
+                      id="m-input-staff"
+                      placeholder="Nhập Số điện thoại"
+                    />
+                  </div>
+                </div>
+                <div class="m-pop-up-content-input-header">
+                  <p class="title margin-top-8">B. Thông tin công việc</p>
+                </div>
+                <div class="underline"></div>
+                <div class="t-row">
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Vị trí</p>
+                    <select class="m-combobox m-combobox-sex" name="" id="">
+                      <option class="m-combobox" value="Male">Giám đốc</option>
+                      <option class="m-combobox" value="Female">
+                        Nhân viên
+                      </option>
+                    </select>
+                  </div>
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Phòng ban</p>
+                    <select class="m-combobox m-combobox-sex" name="" id="">
+                      <option class="m-combobox" value="Male">Nhân sự</option>
+                      <option class="m-combobox" value="Female">Kế toán</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="t-row">
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">
+                      Mã số thuế cá nhân
+                    </p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="text"
+                      name="m-input"
+                      placeholder="Mã số thuế cá nhân"
+                    />
+                  </div>
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">Mức lương cơ bản</p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="text"
+                      name="m-input"
+                      id="m-input-staff"
+                      placeholder="Mức lương cơ bản"
+                    />
+                  </div>
+                </div>
+                <div class="t-row">
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">
+                      Ngày ra nhập công ty
+                    </p>
+                    <input
+                      class="m-input m-input-staff"
+                      type="date"
+                      name="m-input"
+                      placeholder="Ngày ra nhập công ty"
+                    />
+                  </div>
+                  <div class="input-wrapper">
+                    <p class="m-pop-up-content-input-title">
+                      Tình trạng công việc
+                    </p>
+                    <select class="m-combobox m-combobox-sex" name="" id="">
+                      <option class="m-combobox" value="Male">
+                        Đang làm việc
+                      </option>
+                      <option class="m-combobox" value="Female">
+                        Nghỉ hưu
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-pop-up-footer">
+              <div class="m-btn-pop-up">Hủy</div>
+              <div class="m-btn-pop-up-pr">
+                <i class="far fa-save m-icon-save"></i>Lưu
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- form start -->
   </body>
 </html>

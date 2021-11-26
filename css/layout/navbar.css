@@ -27,12 +27,20 @@
   background-repeat: no-repeat;
 }
 
+.navbar .nav-menu a {
+  text-decoration: none;
+}
+
 .nav-menu-item {
   display: flex;
   height: 44px;
   align-items: center;
   padding-left: 16px;
   padding-right: 16px;
+}
+.nav-menu-item .nav-menu-item-icon,
+.nav-menu-item .nav-menu-item-text {
+  color: #000000;
 }
 .nav-menu-item:hover {
   background-color: #e5e5e5;
@@ -45,5 +53,9 @@
 
 .nav-menu-item.menu-item-active {
   background-color: #019160;
-  color: #ffff;
+}
+
+.nav-menu-item.menu-item-active .nav-menu-item-icon,
+.nav-menu-item.menu-item-active .nav-menu-item-text {
+  color: #ffffff;
 }

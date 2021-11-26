@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Combobox</title>
+  </head>
+  <body>
+    <div style="margin: 10px auto; transform: translate(45%, 0%)">
+      <select class="m-combobox" name="" id="">
+        <option class="m-combobox" value="">chọn/nhập thông tin</option>
+        <option class="m-combobox" value="Male">Male</option>
+        <option class="m-combobox" value="Female">Female</option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="ncombobox-wrapper">
+        <div class="ncombobox">
+          <input
+            type="text"
+            class="m-input m-input-combobox"
+            name=""
+            id="cbGender"
+          />
+          <button tabindex="-1" class="m-btn-combobox show-icon">
+            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-up"></i>
+          </button>
+          <div class="m-combobox-list">
+            <div class="m-combobox-item" value="0">Nữ</div>
+            <div class="m-combobox-item" value="1">Nam</div>
+            <div class="m-combobox-item" value="2">gay</div>
+            <div class="m-combobox-item" value="3">Khác</div>
+          </div>
+        </div>
+        <div class="error-message"></div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="ncombobox-wrapper">
+        <div class="ncombobox">
+          <input
+            autocomplete="off"
+            type="text"
+            class="m-input m-input-combobox"
+            name=""
+            id="cbGender"
+          />
+          <button tabindex="-1" class="m-btn-combobox show-icon">
+            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-up"></i>
+          </button>
+          <div class="m-combobox-list">
+            <div class="m-combobox-item" value="1">Kế toán</div>
+            <div class="m-combobox-item" value="2">Hành chính</div>
+            <div class="m-combobox-item" value="3">Kinh doanh</div>
+            <div class="m-combobox-item" value="4">sản xuất</div>
+          </div>
+        </div>
+        <div class="error-message"></div>
+      </div>
+    </div>
+    <script src="./js/jquery-min-production.js"></script>
+    <script src="./lib/combobox/combobox.js"></script>
+  </body>
+</html>
